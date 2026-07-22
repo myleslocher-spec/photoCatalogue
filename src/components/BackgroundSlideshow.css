@@ -1,0 +1,29 @@
+.background-slideshow {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.background-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+
+    .background-slide.active {
+        opacity: 1;
+    }
+
+/* Darkens the photos slightly so text remains readable. */
+.background-slideshow::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}

@@ -1,0 +1,29 @@
+.photo-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.lightbox-image {
+    max-width: 95vw;
+    max-height: 90vh;
+    object-fit: contain;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-close {
+    position: fixed;
+    top: 20px;
+    right: 28px;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 42px;
+    line-height: 1;
+    cursor: pointer;
+}
